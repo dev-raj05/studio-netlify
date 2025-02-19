@@ -1,57 +1,180 @@
-# Booleanmaths Blog
+# Astro-Sanity Blog
 
-Welcome to **Booleanmaths Blog** – a fast, SEO-optimized blog website built with [Astro](https://astro.build/) and [Sanity.io](https://www.sanity.io/). This repository contains the source code for the blog, including dynamic SEO components, JSON‑LD generation, and seamless integration with Sanity CMS for managing content.
+A modern blog website built with Astro and Sanity CMS, offering blazing-fast performance and a powerful content management system.
 
 ## Features
 
-- **Astro Framework:** Blazing-fast static site generation.
-- **Sanity.io CMS:** Flexible, powerful content management.
-- **SEO Optimized:** Dynamic meta tags, Open Graph, Twitter Cards, and JSON‑LD structured data.
-- **Responsive Design:** Great experience on all devices.
-- **Modern Development:** Utilizes best practices in web performance and accessibility.
+- ⚡️ Built with Astro for lightning-fast page loads
+- 📝 Sanity CMS integration for content management
+- 🎨 Responsive design
+- 🔍 SEO optimized
+- 💨 Fast build times
+- 📱 Mobile-first approach
 
 ## Prerequisites
 
-Before getting started, ensure you have:
-
-- [Node.js](https://nodejs.org/) (v14 or later recommended)
-- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+Before you begin, ensure you have the following installed:
+- Node.js (v16.0.0 or higher)
+- npm or yarn
+- Git
 
 ## Installation
 
-Follow these steps to set up the project locally:
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/astro-sanity-blog.git
+cd astro-sanity-blog
+```
 
-1. **Clone the Repository**
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-   ```bash
-   git clone https://github.com/yourusername/booleanmaths-blog.git
-   cd booleanmaths-blog
-2. **Install Dependencies**
+3. Set up environment variables:
+Create a `.env` file in the root directory and add the following:
+```env
+PUBLIC_SANITY_PROJECT_ID=your_project_id
+PUBLIC_SANITY_DATASET=production
+SANITY_API_TOKEN=your_api_token
+```
 
-   ```Using npm or yarn
-   npm install
-   yarn install
-   
-3. **Configure Environment Variables**
-   ```Create a .env file in the root directory with the following variables:
-      # Astro Site URL (used for canonical URLs and other settings)
-      SITE=https://yourwebsite.com
-      # Sanity.io Configuration
-      SANITY_PROJECT_ID=your-sanity-project-id
-      SANITY_DATASET=production
-      SANITY_API_TOKEN=your-sanity-api-token
-   Note: Replace your-sanity-project-id, production, and your-sanity-api-token with your actual Sanity project details. For local development, you may use a preview token.
+## Sanity CMS Setup
 
-4 **(Optional) Set Up Sanity Studio**
+1. Create a Sanity account at [sanity.io](https://www.sanity.io/)
 
-   ```If your repository includes the Sanity Studio, navigate to the studio folder:
-      cd studio
-      npm install
+2. Install Sanity CLI globally:
+```bash
+npm install -g @sanity/cli
+# or
+yarn global add @sanity/cli
+```
 
-   **Start the Sanity Studio locally:**
-      npm run start
-   -> You may need to configure your sanity.json if this is your first time setting it up.
+3. Initialize Sanity studio:
+```bash
+cd studio
+sanity init
+```
 
-5. **Development**
-   
-   
+4. Start Sanity studio:
+```bash
+sanity start
+```
+
+## Development
+
+To start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The site will be available at `http://localhost:3000`
+
+To start both Astro and Sanity studio simultaneously:
+```bash
+npm run dev:all
+# or
+yarn dev:all
+```
+
+## Building for Production
+
+1. Build the project:
+```bash
+npm run build
+# or
+yarn build
+```
+
+2. Preview the production build:
+```bash
+npm run preview
+# or
+yarn preview
+```
+
+## Deployment
+
+### Deploying the Frontend
+
+You can deploy the `dist` folder to any static hosting service like Netlify, Vercel, or GitHub Pages.
+
+#### Netlify Deployment
+1. Push your code to GitHub
+2. Connect your repository to Netlify
+3. Set the build command to `npm run build` or `yarn build`
+4. Set the publish directory to `dist`
+5. Add your environment variables in Netlify's dashboard
+
+#### Vercel Deployment
+1. Push your code to GitHub
+2. Import your repository to Vercel
+3. Vercel will automatically detect Astro and set up the build configuration
+4. Add your environment variables in Vercel's dashboard
+
+### Deploying Sanity Studio
+
+1. Build the studio:
+```bash
+cd studio
+sanity build
+```
+
+2. Deploy the studio:
+```bash
+sanity deploy
+```
+
+## Project Structure
+
+```
+/
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   └── styles/
+├── studio/
+│   ├── schemas/
+│   └── sanity.config.ts
+├── public/
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
+
+## Customization
+
+### Modifying the Theme
+Edit the theme variables in `src/styles/global.css`
+
+### Adding New Content Types
+1. Create new schema files in `studio/schemas/`
+2. Register them in `studio/schemas/schema.js`
+3. Update the corresponding Astro components in `src/components/`
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Support
+
+For support, email your-email@example.com or open an issue in the GitHub repository.
+
+## Acknowledgments
+
+- [Astro Documentation](https://docs.astro.build)
+- [Sanity Documentation](https://www.sanity.io/docs)
+- [Deployment Guides](https://docs.astro.build/en/guides/deploy/)
