@@ -83,6 +83,10 @@ npm run dev:all
 yarn dev:all
 ```
 
+## Additional Information
+
+Go to this [Docs](https://www.sanity.io/guides/sanity-astro-blog)
+
 ## Building for Production
 
 1. Build the project:
