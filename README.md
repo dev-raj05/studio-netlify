@@ -22,8 +22,8 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/astro-sanity-blog.git
-cd astro-sanity-blog
+git clone https://github.com/medront/working-venv-astro.git
+cd working-venv-astro
 ```
 
 2. Install dependencies:
@@ -44,8 +44,9 @@ SANITY_API_TOKEN=your_api_token
 ## Sanity CMS Setup
 
 1. Create a Sanity account at [sanity.io](https://www.sanity.io/)
+2. create a sanity project in your project using [npm create sanity@latest]
 
-2. Install Sanity CLI globally:
+3. Install Sanity CLI globally:
 ```bash
 npm install -g @sanity/cli
 # or
@@ -61,6 +62,7 @@ sanity init
 4. Start Sanity studio:
 ```bash
 sanity start
+mpx sanity dev -> PORT 3333
 ```
 
 ## Development
@@ -72,7 +74,7 @@ npm run dev
 yarn dev
 ```
 
-The site will be available at `http://localhost:3000`
+The site will be available at `http://localhost:4321`
 
 To start both Astro and Sanity studio simultaneously:
 ```bash
