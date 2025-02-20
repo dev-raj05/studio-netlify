@@ -62,7 +62,7 @@ sanity init
 4. Start Sanity studio:
 ```bash
 sanity start
-mpx sanity dev -> PORT 3333
+npx sanity dev -> PORT 3333
 ```
 
 ## Development
