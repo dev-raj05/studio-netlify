@@ -16,6 +16,7 @@ const { PUBLIC_SANITY_PROJECT_ID, PUBLIC_SANITY_DATASET } = loadEnv(
 );
 
 export default defineConfig({
+  cacheDir: "./.cache",
   site: "https://yoursite.netlify.app",
   integrations: [
     preact(),
