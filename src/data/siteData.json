@@ -1,8 +1,22 @@
 {
-  "title": "Booleanmaths Blog",
-  "description": "Stay Updated with our latest ongoings.",
+  "title": "Marketing Attribution & Analytics Insights | BooleanMaths Blog",
+  "description": "Stay ahead with expert insights on marketing attribution, customer journey analytics, and conversion tracking. Explore the latest trends and strategies to optimize your campaigns with BooleanMaths Blog.",
+  "keywords": "marketing attribution insights, customer journey analytics, conversion tracking strategies, multi-touch attribution, campaign optimization, marketing analytics trends, shopify, digital marketing, social media marketing, influencer marketing",
+  "siteUrl": "https://blog.booleanmaths.com",
   "image": {
     "src": "/images/master.png",
     "alt": "Booleanmaths Blog"
+  },
+  "openGraph": {
+    "title": "Marketing Attribution & Analytics Insights | BooleanMaths Blog",
+    "description": "Discover expert insights on marketing attribution, customer journey analytics, and conversion tracking to optimize your marketing strategies.",
+    "url": "https://blog.booleanmaths.com",
+    "image": "https://blog.booleanmaths.com/blog-thumbnail.jpg"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Marketing Attribution & Analytics Insights | BooleanMaths Blog",
+    "description": "BooleanMaths Blog covers marketing attribution, customer journey analytics, and conversion tracking strategies to help you optimize your campaigns.",
+    "image": "https://blog.booleanmaths.com/blog-thumbnail.jpg"
   }
 }
