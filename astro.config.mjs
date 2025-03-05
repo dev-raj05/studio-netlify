@@ -29,7 +29,7 @@ export default defineConfig({
       visualEditing: true,
       stega: {
         enabled: false,
-        // studioUrl: "/studio",
+        studioUrl: "/admin",
       },
     }),
     react(),

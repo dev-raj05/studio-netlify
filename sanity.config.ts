@@ -7,6 +7,13 @@ import { resolve } from "./src/lib/resolve";
 import { enableVisualEditing } from "@sanity/visual-editing";
 
 export default defineConfig({
+  project: {
+    basePath: "/studio",
+  },
+  api: {
+    projectId: "f9zwkku2",
+    dataset: "production",
+  },
   name: "default",
   title: "astro-env-studio",
   projectId: "f9zwkku2",
