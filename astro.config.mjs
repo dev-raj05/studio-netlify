@@ -25,11 +25,11 @@ export default defineConfig({
       dataset: PUBLIC_SANITY_DATASET,
       useCdn: false, // See note on using the CDN
       // apiVersion: "2025-01-28", // insert the current date to access the latest version of the API
-      studioBasePath: "/studio",
+      studioBasePath: "/admin",
       visualEditing: true,
       stega: {
         enabled: false,
-        studioUrl: "/studio",
+        // studioUrl: "/studio",
       },
     }),
     react(),
@@ -55,7 +55,7 @@ export default defineConfig({
     },
     plugins: [tailwindcss()],
   },
-  output: "server",
+  output: "hybrid",
   // output: "static",
   adapter: netlify({
     edgeMiddleware: true,

@@ -5,7 +5,8 @@
   NPM_FLAGS = "--legacy-peer-deps"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/admin*"
+  to = "/admin"
+  force = true
   status = 200
 
