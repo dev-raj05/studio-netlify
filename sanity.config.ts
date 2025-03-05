@@ -20,7 +20,7 @@ export default defineConfig({
   },
 
   // Use basePath directly in the configuration
-  studioHost: "medront",
+  // studioHost: "medront",
 
   plugins: [
     structureTool(),
