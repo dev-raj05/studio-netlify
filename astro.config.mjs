@@ -26,7 +26,7 @@ export default defineConfig({
       useCdn: false, // See note on using the CDN
       // apiVersion: "2025-01-28", // insert the current date to access the latest version of the API
 
-      studioBasePath: SANITY_STUDIO_BASEPATH || "/admin",
+      studioBasePath: "/admin",
       visualEditing: true,
       stega: {
         enabled: false,

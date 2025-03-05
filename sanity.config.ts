@@ -27,7 +27,7 @@ export default defineConfig({
     presentationTool({
       resolve,
       previewUrl: {
-        origin: "http://localhost:4321",
+        origin: "https://blooggss.netlify.app/",
         previewMode: {
           enable: "/",
           disable: "/api/draft-mode/disable",

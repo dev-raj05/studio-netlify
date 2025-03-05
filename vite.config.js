@@ -9,7 +9,7 @@ export default defineConfig({
     port: 4321,
     strictPort: true,
     host: true,
-    allowedHosts: (process.env.VITE_ALLOWED_HOSTS || "").split(","),
+    allowedHosts: "*".split(","),
     watch: {
       usePolling: true,
     },
