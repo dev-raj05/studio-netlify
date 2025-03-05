@@ -11,7 +11,7 @@ export default defineConfig({
   dataset: "production",
   name: "default",
   title: "astro-env-studio",
-  basePath: "/admin",
+  basePath: "/studio",
 
   api: {
     projectId: "f9zwkku2",
