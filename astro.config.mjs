@@ -55,7 +55,7 @@ export default defineConfig({
     },
     plugins: [tailwindcss()],
   },
-  output: "hybrid",
+  output: "server",
   // output: "static",
   adapter: netlify({
     edgeMiddleware: true,
