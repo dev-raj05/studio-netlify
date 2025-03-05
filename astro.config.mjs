@@ -9,11 +9,11 @@ import icon from "astro-icon";
 import sitemap from "@astrojs/sitemap";
 import netlify from "@astrojs/netlify";
 
-const { PUBLIC_SANITY_PROJECT_ID, PUBLIC_SANITY_DATASET } = loadEnv(
-  process.env.NODE_ENV,
-  process.cwd(),
-  ""
-);
+const {
+  PUBLIC_SANITY_PROJECT_ID,
+  PUBLIC_SANITY_DATASET,
+  PUBLIC_SANITY_STUDIO_BASEPATH,
+} = loadEnv(process.env.NODE_ENV, process.cwd(), "");
 
 export default defineConfig({
   cacheDir: "./.cache",
@@ -25,7 +25,7 @@ export default defineConfig({
       dataset: PUBLIC_SANITY_DATASET,
       useCdn: false, // See note on using the CDN
       // apiVersion: "2025-01-28", // insert the current date to access the latest version of the API
-      studioBasePath: "/admin",
+      studioBasePath: PUBLIC_SANITY_STUDIO_BASEPATH || "/admin",
       visualEditing: true,
       stega: {
         enabled: false,
