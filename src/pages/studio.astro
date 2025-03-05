@@ -1,0 +1,18 @@
+---
+// src/pages/studio.astro
+export const prerender = true; // Static prerendering for the custom container
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanity Studio</title>
+    <style>
+      body, html, iframe { margin: 0; padding: 0; width: 100%; height: 100%; border: none; }
+    </style>
+  </head>
+  <body>
+    <iframe src="/studio" title="Sanity Studio"></iframe>
+  </body>
+</html>
