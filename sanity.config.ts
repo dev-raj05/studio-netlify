@@ -7,24 +7,26 @@ import { resolve } from "./src/lib/resolve";
 import { enableVisualEditing } from "@sanity/visual-editing";
 
 export default defineConfig({
+  projectId: "f9zwkku2",
+  dataset: "production",
+  name: "default",
+  title: "astro-env-studio",
   project: {
-    basePath: "/studio",
+    basePath: "/admin",
   },
   api: {
     projectId: "f9zwkku2",
     dataset: "production",
   },
-  name: "default",
-  title: "astro-env-studio",
-  projectId: "f9zwkku2",
-  dataset: "production",
+
+  // Use basePath directly in the configuration
+  studioHost: "medront",
 
   plugins: [
     structureTool(),
     visionTool(),
     presentationTool({
       resolve,
-      // previewUrl: location.origin,
       previewUrl: {
         origin: "http://localhost:4321",
         previewMode: {
