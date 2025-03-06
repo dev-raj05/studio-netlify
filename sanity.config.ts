@@ -12,10 +12,9 @@ export default defineConfig({
   name: "default",
   title: "astro-env-studio",
   basePath: "/studio",
-
   api: {
-    projectId: "f9zwkku2",
-    dataset: "production",
+    projectId: "f9zwkku2", // Must match your sanity.config.ts
+    dataset: "production", // Must match your sanity.config.ts
   },
 
   // Use basePath directly in the configuration
