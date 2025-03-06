@@ -1,7 +1,14 @@
 ---
 // src/pages/studio/[...studio].astro
-import Studio  from '@sanity/astro';
-export const prerender = true; // ⬅️ Add this line
+import  Studio from '@sanity/astro';
+
+// Add this function to satisfy Astro's dynamic route requirements
+export async function getStaticPaths() {
+  return [{ params: { studio: [] } }]; // Empty array = root path
+}
+
+// Force prerendering
+export const prerender = true;
 ---
 
 <Studio />
